@@ -1,0 +1,19 @@
+name: Идея или модуль
+description: Предложить возможность, модуль или улучшение
+labels: ['идея']
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Что предлагаете
+      placeholder: Модуль для домашнего медиасервера с доступом только из VPN.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Зачем это нужно
+      description: Какую задачу это решает и как вы делаете это сейчас.
+    validations:
+      required: true

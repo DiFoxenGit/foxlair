@@ -1,0 +1,53 @@
+name: Что-то не работает
+description: Ошибка в приложении, при установке агента или на странице сервера
+labels: ['ошибка']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо, что пишете. Не вставляйте сюда пароли, ключи и токены — они не нужны для разбора.
+        Если нашли уязвимость, не создавайте issue: откройте [приватный отчёт](https://github.com/DiFoxenGit/foxlair/security/advisories/new).
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что произошло
+      description: Что вы делали и что увидели вместо ожидаемого.
+      placeholder: Нажал «Установить агента» — установка остановилась на шаге «Запускаем службу агента».
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      placeholder: |
+        1. Открыл приложение
+        2. Ввёл адрес сервера и пароль
+        3. …
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Версия приложения
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: server
+    attributes:
+      label: Сервер
+      description: Система, архитектура и хостинг — без адресов и паролей.
+      placeholder: Ubuntu 24.04, x86_64, VPS
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Журнал установки или текст ошибки
+      description: Подробный журнал есть на экране установки под ссылкой «Подробный журнал».
+      render: text

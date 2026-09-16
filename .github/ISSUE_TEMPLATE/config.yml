@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Уязвимость в безопасности
+    url: https://github.com/DiFoxenGit/foxlair/security/advisories/new
+    about: Приватный отчёт — не публикуйте уязвимости в issue.
+  - name: Сайт проекта
+    url: https://foxlair.ru
+    about: Что такое FoxLair и как он работает.
