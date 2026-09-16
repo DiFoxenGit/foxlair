@@ -28,7 +28,7 @@ You have a VPS or a home server but no desire to learn Linux administration. Fox
 - **Installs an agent** — a small service that runs only the app's commands and opens no ports to the internet.
 - **Forgets the password** — afterwards it signs in with your computer's key.
 - **Protects the server** — key-only login, firewall, fail2ban, automatic security updates.
-- **Installs modules** — Docker and Caddy are ready; VPN, storage, photos and more are coming.
+- **Installs modules** — hardening, Docker and Caddy, VPN and DNS: one click from the store.
 - **Shows a dashboard** — load, memory, disk, services and module state, no terminal needed.
 
 A fox guide named **Tail** explains every step: what will happen, why it helps and what the risk is.
