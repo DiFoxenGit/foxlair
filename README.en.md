@@ -13,7 +13,7 @@ protection, Docker, VPN, dashboard. Modules are added with one click.
 
 [![Website](https://img.shields.io/badge/website-foxlair.ru-0B8F8A)](https://foxlair.ru)
 [![Download](https://img.shields.io/github/v/release/DiFoxenGit/foxlair?label=download&color=EE5A36)](https://github.com/DiFoxenGit/foxlair/releases/latest)
-![Platform](https://img.shields.io/badge/app-Windows-0078D6?logo=windows&logoColor=white)
+![Platform](https://img.shields.io/badge/app-Windows%20%7C%20Android-0078D6?logo=windows&logoColor=white)
 ![Server](https://img.shields.io/badge/server-Ubuntu%2022.04%20%7C%2024.04-E95420?logo=ubuntu&logoColor=white)
 
 </div>
@@ -28,8 +28,10 @@ You have a VPS or a home server but no desire to learn Linux administration. Fox
 - **Installs an agent** — a small service that runs only the app's commands and opens no ports to the internet.
 - **Forgets the password** — afterwards it signs in with your computer's key.
 - **Protects the server** — key-only login, firewall, fail2ban, automatic security updates.
-- **Installs modules** — Docker, Caddy, VPN, DNS: one click from the store.
+- **Installs modules** — Docker, Caddy, VPN, DNS, file storage, game servers: one click from the store.
 - **Shows a dashboard** — load, memory, disk, services and module state, no terminal needed.
+- **Gives you a console** — when you do need a command line, it is right on the server page, next to the service logs.
+- **Runs on your phone** — the same app for Android: install the agent and manage the server on the move.
 
 A fox guide named **Tail** explains every step: what will happen, why it helps and what the risk is.
 Nothing changes without your confirmation.
@@ -48,12 +50,15 @@ Russian and English.
 
 ## Install
 
-1. Download the installer from [Releases](https://github.com/DiFoxenGit/foxlair/releases/latest) or [foxlair.ru](https://foxlair.ru).
+1. Download the Windows installer (or the Android APK) from
+   [Releases](https://github.com/DiFoxenGit/foxlair/releases/latest) or [foxlair.ru](https://foxlair.ru).
 2. Run it and pick language, style and theme.
 3. Enter the server address, user and password from your hosting provider.
 4. Confirm the server fingerprint and wait for the agent — everything else happens on the agent page.
 
 **Server requirements:** Ubuntu 22.04 or 24.04 LTS, x86_64 or ARM64, 512 MB RAM and 2 GB free space.
+The internet during installation is needed by your device, not by the server: the app downloads the agent
+and sends it over SSH.
 
 > [!NOTE]
 > The app is not signed with a certificate authority yet, so Windows shows a SmartScreen warning:
@@ -66,6 +71,11 @@ Russian and English.
 - Your computer's key and access tokens live in the operating system credential store.
 - The agent API requires a token, listens on loopback only and checks the `Host` header.
 - Agent updates are downloaded over HTTPS and verified by SHA-256 and an Ed25519 signature.
+- The server page opens with a one-time code that lives 30 seconds and burns on first use.
+- Every computer of yours has its own token: coming back from another one with the server password
+  does not take access away from the rest.
+- The system is changed only by the privileged helper and only by actions described in the modules.
+  The one exception is the server console — you asked for it, and it does exactly what your own SSH session does.
 
 Found a vulnerability? Use a [private report](https://github.com/DiFoxenGit/foxlair/security/advisories/new) — see [SECURITY.md](SECURITY.md).
 
