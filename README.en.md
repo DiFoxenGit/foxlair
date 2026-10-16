@@ -189,19 +189,19 @@ flowchart LR
 ## 📥 Download
 
 The latest version is on the [Releases](https://github.com/DiFoxenGit/foxlair/releases/latest) page and at
-[foxlair.ru](https://foxlair.ru). Files of version 0.3.0:
+[foxlair.ru](https://foxlair.ru). Files of version 0.3.1:
 
 | Platform | File | Use it for |
 |---|---|---|
-| 🪟 Windows | [`FoxLair-0.3.0-windows-x64-setup.exe`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-windows-x64-setup.exe) | The installer — for most people |
-| 🪟 Windows | [`FoxLair-0.3.0-windows-x64.msi`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-windows-x64.msi) | Companies and group policies |
-| 🤖 Android | [`FoxLair-0.3.0-android.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-android.apk) | arm64 — almost every phone |
-| 🤖 Android | [`FoxLair-0.3.0-android-universal.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-android-universal.apk) | All architectures, a bigger file |
-| 🐧 Linux | [`FoxLair-0.3.0-linux-amd64.deb`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-amd64.deb) | Debian, Ubuntu |
-| 🐧 Linux | [`FoxLair-0.3.0-linux-x86_64.rpm`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-x86_64.rpm) | Fedora, openSUSE |
-| 🐧 Linux | [`FoxLair-0.3.0-linux-x86_64.AppImage`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-x86_64.AppImage) | Other distributions, no install |
+| 🪟 Windows | [`FoxLair-0.3.1-windows-x64-setup.exe`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-windows-x64-setup.exe) | The installer — for most people |
+| 🪟 Windows | [`FoxLair-0.3.1-windows-x64.msi`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-windows-x64.msi) | Companies and group policies |
+| 🤖 Android | [`FoxLair-0.3.1-android.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-android.apk) | arm64 — almost every phone |
+| 🤖 Android | [`FoxLair-0.3.1-android-universal.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-android-universal.apk) | All architectures, a bigger file |
+| 🐧 Linux | [`FoxLair-0.3.1-linux-amd64.deb`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-linux-amd64.deb) | Debian, Ubuntu |
+| 🐧 Linux | [`FoxLair-0.3.1-linux-x86_64.rpm`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-linux-x86_64.rpm) | Fedora, openSUSE |
+| 🐧 Linux | [`FoxLair-0.3.1-linux-x86_64.AppImage`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-linux-x86_64.AppImage) | Other distributions, no install |
 
-Checksums are in [`SHA256SUMS`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/SHA256SUMS):
+Checksums are in [`SHA256SUMS`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/SHA256SUMS):
 `sha256sum -c SHA256SUMS --ignore-missing`.
 
 ### Install
@@ -225,7 +225,7 @@ package. The server agent updates itself — the server page offers it.
 
 - glibc 2.34 or newer and WebKitGTK 4.1.
 - Install `.deb` and `.rpm` with `apt` or `dnf` — dependencies come along.
-- Make the `.AppImage` executable: `chmod +x FoxLair-0.3.0-linux-x86_64.AppImage`.
+- Make the `.AppImage` executable: `chmod +x FoxLair-0.3.1-linux-x86_64.AppImage`.
 - The app does not update itself on Linux: install the new package over the old one.
 - The tray is a system menu with the same items as the Windows panel.
 
