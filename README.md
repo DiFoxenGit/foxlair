@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="FoxLair — твоё личное облако на своём сервере" width="100%">
+<img src="docs/banner.png" alt="FoxLair — ваше личное облако на своём сервере" width="100%">
 
 <br>
 
@@ -332,4 +332,4 @@ flowchart LR
 
 Проприетарное ПО, все права защищены — см. [LICENSE](LICENSE).
 
-<div align="center"><br><sub>© 2026 DiFoxen · FoxLair — твоё личное облако · <a href="README.en.md">English</a></sub></div>
+<div align="center"><br><sub>© 2026 DiFoxen · FoxLair — ваше личное облако · <a href="README.en.md">English</a></sub></div>
