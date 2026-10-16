@@ -189,19 +189,19 @@ flowchart LR
 ## 📥 Скачать
 
 Последняя версия — на странице [релизов](https://github.com/DiFoxenGit/foxlair/releases/latest) и на [foxlair.ru](https://foxlair.ru).
-Файлы версии 0.3.0:
+Файлы версии 0.3.1:
 
 | Платформа | Файл | Для чего |
 |---|---|---|
-| 🪟 Windows | [`FoxLair-0.3.0-windows-x64-setup.exe`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-windows-x64-setup.exe) | Установщик — для большинства |
-| 🪟 Windows | [`FoxLair-0.3.0-windows-x64.msi`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-windows-x64.msi) | Для компаний и групповых политик |
-| 🤖 Android | [`FoxLair-0.3.0-android.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-android.apk) | arm64 — почти все телефоны |
-| 🤖 Android | [`FoxLair-0.3.0-android-universal.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-android-universal.apk) | Все архитектуры, файл крупнее |
-| 🐧 Linux | [`FoxLair-0.3.0-linux-amd64.deb`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-amd64.deb) | Debian, Ubuntu |
-| 🐧 Linux | [`FoxLair-0.3.0-linux-x86_64.rpm`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-x86_64.rpm) | Fedora, openSUSE |
-| 🐧 Linux | [`FoxLair-0.3.0-linux-x86_64.AppImage`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-x86_64.AppImage) | Другие дистрибутивы, без установки |
+| 🪟 Windows | [`FoxLair-0.3.1-windows-x64-setup.exe`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-windows-x64-setup.exe) | Установщик — для большинства |
+| 🪟 Windows | [`FoxLair-0.3.1-windows-x64.msi`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-windows-x64.msi) | Для компаний и групповых политик |
+| 🤖 Android | [`FoxLair-0.3.1-android.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-android.apk) | arm64 — почти все телефоны |
+| 🤖 Android | [`FoxLair-0.3.1-android-universal.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-android-universal.apk) | Все архитектуры, файл крупнее |
+| 🐧 Linux | [`FoxLair-0.3.1-linux-amd64.deb`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-linux-amd64.deb) | Debian, Ubuntu |
+| 🐧 Linux | [`FoxLair-0.3.1-linux-x86_64.rpm`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-linux-x86_64.rpm) | Fedora, openSUSE |
+| 🐧 Linux | [`FoxLair-0.3.1-linux-x86_64.AppImage`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/FoxLair-0.3.1-linux-x86_64.AppImage) | Другие дистрибутивы, без установки |
 
-Суммы файлов — в [`SHA256SUMS`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/SHA256SUMS):
+Суммы файлов — в [`SHA256SUMS`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.1/SHA256SUMS):
 `sha256sum -c SHA256SUMS --ignore-missing`.
 
 ### Установка
@@ -225,7 +225,7 @@ flowchart LR
 
 - glibc 2.34 или новее и WebKitGTK 4.1.
 - `.deb` и `.rpm` ставьте через `apt` или `dnf` — зависимости подтянутся сами.
-- `.AppImage` достаточно сделать исполняемым: `chmod +x FoxLair-0.3.0-linux-x86_64.AppImage`.
+- `.AppImage` достаточно сделать исполняемым: `chmod +x FoxLair-0.3.1-linux-x86_64.AppImage`.
 - Приложение на Linux не обновляется само: новую версию ставят пакетом поверх.
 - Трей — системное меню с теми же пунктами, что панель на Windows.
 
