@@ -1,27 +1,30 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="FoxLair — твоё личное облако на своём сервере" width="100%">
+<img src="docs/banner.png" alt="FoxLair — ваше личное облако на своём сервере" width="100%">
 
 <br>
 
-**Вводишь данные сервера — FoxLair превращает его в защищённое личное облако.**
+**Вводите данные сервера — FoxLair превращает его в защищённое личное облако.**
 
 Приложение подключается по SSH, ставит агента и дальше ведёт настройку в понятном мастере:
-защита, Docker, VPN, дашборд. Модули добавляются одним нажатием. Работает на компьютере
-и на телефоне.
+защита, Docker, VPN, дашборд. Модули добавляются одним нажатием. Работает на Windows, Android и Linux
+и выглядит как всё семейство приложений DiFoxen — в оформлении Fox Brand.
 
 <br>
 
-[![Сайт](https://img.shields.io/badge/сайт-foxlair.ru-0B8F8A)](https://foxlair.ru)
-[![Скачать](https://img.shields.io/github/v/release/DiFoxenGit/foxlair?label=скачать&color=EE5A36)](https://github.com/DiFoxenGit/foxlair/releases/latest)
-![Платформа](https://img.shields.io/badge/приложение-Windows%20%7C%20Android-0078D6?logo=windows&logoColor=white)
+[![Сайт](https://img.shields.io/badge/сайт-foxlair.ru-C94B00)](https://foxlair.ru)
+[![Скачать](https://img.shields.io/github/v/release/DiFoxenGit/foxlair?label=скачать&color=C94B00)](https://github.com/DiFoxenGit/foxlair/releases/latest)
+![Приложение](https://img.shields.io/badge/приложение-Windows%20%7C%20Android%20%7C%20Linux-7F6554)
 ![Сервер](https://img.shields.io/badge/сервер-Ubuntu%2022.04%20%7C%2024.04-E95420?logo=ubuntu&logoColor=white)
-![Статус](https://img.shields.io/badge/статус-pre--alpha-EE5A36)
+![Оформление](https://img.shields.io/badge/оформление-Fox%20Brand-E8672E)
+![Статус](https://img.shields.io/badge/статус-pre--alpha-AE4106)
 
 [**Что это**](#-что-это) ·
-[**Как выглядит**](#-как-выглядит) ·
-[**Как устроено**](#️-как-устроено) ·
-[**Установка**](#-установка) ·
+[**Fox Brand**](#-fox-brand) ·
+[**Тейл**](#-тейл) ·
+[**Трей**](#-трей) ·
+[**Страница сервера**](#-страница-сервера) ·
+[**Скачать**](#-скачать) ·
 [**Безопасность**](#-безопасность)
 
 </div>
@@ -38,49 +41,127 @@
 | 🦊 **Ставит агента** | Небольшую службу, которая выполняет только команды приложения и не открывает портов наружу |
 | 🔑 **Забывает пароль** | После установки заходит по ключу вашего компьютера — пароль сервера больше не нужен |
 | 🛡 **Защищает сервер** | Вход по ключу, фаервол, fail2ban, автообновления — каждая часть по отдельности |
-| 🧩 **Ставит модули** | Docker, Caddy, VPN, DNS, хранилище файлов, игровые серверы — одним нажатием |
+| 🧩 **Ставит модули** | Docker, Caddy, VPN, DNS, хранилище файлов, игровые серверы, умный дом — одним нажатием |
 | 📊 **Показывает дашборд** | Нагрузка, память, диск, службы и состояние модулей — без терминала |
 | 🖥 **Даёт консоль** | Когда всё же нужна командная строка, она есть прямо на странице сервера — вместе с журналами служб |
-| 📱 **Живёт в телефоне** | То же приложение под Android: поставить агента и управлять сервером из дороги |
+| 🧭 **Живёт в трее** | На компьютере крестик окна сворачивает FoxLair в трей, а запуск при входе в систему включается на первом шаге |
+| 📱 **Работает везде** | Windows, Android и Linux: поставить агента и управлять сервером с компьютера или из дороги |
 
 Каждый шаг объясняет лис-проводник **Тейл**: что произойдёт, чем это полезно и чем рискованно.
 Ничего не меняется без вашего подтверждения.
 
-## 🖼 Как выглядит
+## 🎨 Fox Brand
+
+С версии 0.3.0 FoxLair выглядит как все приложения DiFoxen: общий знак-лис, шрифт, кнопки, окна и анимации.
+Вместо прежних трёх стилей — **три палитры** бренда, и в каждой **светлая, тёмная или системная тема**.
+Выбор делается на первом шаге и переносится на страницу сервера.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/screenshots/greeting-glass.png" alt="Приветствие лиса Тейла после установки агента"></td>
-<td width="50%"><img src="docs/screenshots/dashboard-glass.png" alt="Дашборд сервера: нагрузка, память, диск, службы и модули"></td>
+<td width="33%"><img src="docs/screenshots/server-toffee-light.png" alt="Страница сервера в палитре Toffee, светлая тема"></td>
+<td width="33%"><img src="docs/screenshots/server-cocoa-light.png" alt="Страница сервера в палитре Cocoa, светлая тема"></td>
+<td width="33%"><img src="docs/screenshots/server-forest-light.png" alt="Страница сервера в палитре Forest, светлая тема"></td>
 </tr>
 <tr>
-<td align="center"><sub>Тейл встречает сразу после установки агента</sub></td>
-<td align="center"><sub>Дашборд: нагрузка, память, диск, службы, модули</sub></td>
+<td width="33%"><img src="docs/screenshots/server-toffee-dark.png" alt="Страница сервера в палитре Toffee, тёмная тема"></td>
+<td width="33%"><img src="docs/screenshots/server-cocoa-dark.png" alt="Страница сервера в палитре Cocoa, тёмная тема"></td>
+<td width="33%"><img src="docs/screenshots/server-forest-dark.png" alt="Страница сервера в палитре Forest, тёмная тема"></td>
+</tr>
+<tr>
+<td align="center"><b>Toffee</b><br><sub>тёплая карамель, по умолчанию</sub></td>
+<td align="center"><b>Cocoa</b><br><sub>глубокий шоколад</sub></td>
+<td align="center"><b>Forest</b><br><sub>лесная зелень</sub></td>
 </tr>
 </table>
 
-### Три стиля интерфейса
-
-Один и тот же шаг настройки безопасности — стиль выбирается при первом запуске и переносится на сервер.
+| Настройка | Варианты |
+|---|---|
+| 🎨 Палитра | Toffee · Cocoa · Forest |
+| 🌗 Тема | Системная · Светлая · Тёмная |
+| ✨ Движение | Системное · Полное · Меньше — «Меньше» убирает сдвиги, цвет по-прежнему меняется плавно |
+| 🌐 Язык | Русский · English |
 
 <table>
 <tr>
-<td width="33%"><img src="docs/screenshots/security-graphite.png" alt="Настройка безопасности в стиле Графит"></td>
-<td width="33%"><img src="docs/screenshots/security-glass.png" alt="Настройка безопасности в стиле Стекло"></td>
-<td width="33%"><img src="docs/screenshots/security-terminal.png" alt="Настройка безопасности в стиле Терминал"></td>
+<td width="65%"><img src="docs/screenshots/first-launch-toffee-dark.png" alt="Первый запуск: язык, палитра, тема, движение и поведение окна"></td>
+<td width="35%"><img src="docs/screenshots/phone-appearance-forest-light.png" alt="Внешний вид на телефоне: палитра Forest, светлая тема"></td>
 </tr>
 <tr>
-<td align="center"><b>Графит</b><br><sub>строгий и плотный</sub></td>
-<td align="center"><b>Стекло</b><br><sub>по умолчанию</sub></td>
-<td align="center"><b>Терминал</b><br><sub>моноширинный, с пиксельным Тейлом</sub></td>
+<td align="center"><sub>Первый запуск: язык, внешний вид и что делать при закрытии окна</sub></td>
+<td align="center"><sub>Тот же выбор на телефоне</sub></td>
 </tr>
 </table>
 
-Каждый стиль — со светлой и тёмной темой, на компьютере и на телефоне. Русский и английский.
+### На телефоне
 
-<img src="docs/screenshots/settings-glass.png" alt="Настройки сервера: разделы слева, содержимое справа" width="100%">
+Интерфейс собран отдельно для компьютера, планшета и телефона: на телефоне разделы — внизу, окна — шторками.
 
-<div align="center"><sub>Настройки сервера: оформление, безопасность, аккаунт и обновления — по разделам</sub></div>
+<table>
+<tr>
+<td width="33%"><img src="docs/screenshots/phone-server-toffee-light.png" alt="Дашборд на телефоне, Toffee, светлая тема"></td>
+<td width="33%"><img src="docs/screenshots/phone-server-cocoa-dark.png" alt="Дашборд на телефоне, Cocoa, тёмная тема"></td>
+<td width="33%"><img src="docs/screenshots/phone-tail-forest-dark.png" alt="Тейл приветствует на телефоне, Forest, тёмная тема"></td>
+</tr>
+<tr>
+<td align="center"><sub>Toffee · светлая</sub></td>
+<td align="center"><sub>Cocoa · тёмная</sub></td>
+<td align="center"><sub>Forest · тёмная</sub></td>
+</tr>
+</table>
+
+## 🦊 Тейл
+
+Тейл — маскот Fox Brand и ваш проводник. Он встречает сразу после установки агента, а дальше сидит в углу мастера
+и подсказывает, что делает каждый шаг. Обращается к вам на «вы», честно предупреждает о рисках, а реплика
+встаёт так, чтобы не закрывать кнопки. Подсказки выключаются в настройках в любой момент.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/tail-greeting-toffee-light.png" alt="Тейл приветствует после установки агента"></td>
+<td width="50%"><img src="docs/screenshots/tail-advisor-forest-light.png" alt="Тейл подсказывает в углу мастера на шаге безопасности"></td>
+</tr>
+<tr>
+<td align="center"><sub>Приветствие после установки агента</sub></td>
+<td align="center"><sub>Подсказка в углу мастера</sub></td>
+</tr>
+</table>
+
+## 🧭 Трей
+
+На компьютере FoxLair живёт в трее: «Открыть FoxLair», «Настройки…», «Проверить обновления…» и «Выйти из FoxLair».
+На Windows по правому щелчку открывается панель Fox Brand в цветах выбранной палитры, на Linux — системное меню
+того же состава. Крестик окна по умолчанию сворачивает в трей; «Запускать при входе в систему» и
+«Запускать свёрнутым в трей» — на первом шаге мастера.
+
+<table>
+<tr>
+<td width="33%" align="center"><img src="docs/screenshots/tray-ru-toffee-light.png" alt="Панель трея: Toffee, светлая тема" width="300"></td>
+<td width="33%" align="center"><img src="docs/screenshots/tray-ru-cocoa-dark.png" alt="Панель трея: Cocoa, тёмная тема" width="300"></td>
+<td width="33%" align="center"><img src="docs/screenshots/tray-en-forest-dark.png" alt="Панель трея на английском: Forest, тёмная тема" width="300"></td>
+</tr>
+<tr>
+<td align="center"><sub>Toffee · светлая</sub></td>
+<td align="center"><sub>Cocoa · тёмная</sub></td>
+<td align="center"><sub>Forest · тёмная · English</sub></td>
+</tr>
+</table>
+
+## 🖥 Страница сервера
+
+Дашборд, модули, настройки, консоль и журналы служб — всё на одной странице, которую отдаёт агент на вашем сервере.
+
+<div align="center"><img src="docs/screenshots/server-toffee-light.png" alt="Дашборд сервера: нагрузка, память, диск и службы" width="88%"></div>
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/settings-appearance-cocoa-light.png" alt="Настройки сервера: язык, подсказки Тейла, палитра, тема, движение"></td>
+<td width="50%"><img src="docs/screenshots/logs-cocoa-dark.png" alt="Консоль сервера и журналы служб"></td>
+</tr>
+<tr>
+<td align="center"><sub>Настройки: язык, Тейл, внешний вид, безопасность</sub></td>
+<td align="center"><sub>Консоль и журналы служб — тёмный остров в любой теме</sub></td>
+</tr>
+</table>
 
 ## ⚙️ Как устроено
 
@@ -105,21 +186,55 @@ flowchart LR
   и подписи — и приложением, и самим агентом.
 - **Настройка переживает перезагрузку.** Каждый шаг пишется в журнал: незавершённый повторится, выполненный — пропустится.
 
-## 📥 Установка
+## 📥 Скачать
 
-1. Скачайте установщик для Windows (или APK для Android) со страницы
-   [релизов](https://github.com/DiFoxenGit/foxlair/releases/latest) или с [foxlair.ru](https://foxlair.ru).
-2. Запустите и выберите язык, стиль и тему.
+Последняя версия — на странице [релизов](https://github.com/DiFoxenGit/foxlair/releases/latest) и на [foxlair.ru](https://foxlair.ru).
+Файлы версии 0.3.0:
+
+| Платформа | Файл | Для чего |
+|---|---|---|
+| 🪟 Windows | [`FoxLair-0.3.0-windows-x64-setup.exe`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-windows-x64-setup.exe) | Установщик — для большинства |
+| 🪟 Windows | [`FoxLair-0.3.0-windows-x64.msi`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-windows-x64.msi) | Для компаний и групповых политик |
+| 🤖 Android | [`FoxLair-0.3.0-android.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-android.apk) | arm64 — почти все телефоны |
+| 🤖 Android | [`FoxLair-0.3.0-android-universal.apk`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-android-universal.apk) | Все архитектуры, файл крупнее |
+| 🐧 Linux | [`FoxLair-0.3.0-linux-amd64.deb`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-amd64.deb) | Debian, Ubuntu |
+| 🐧 Linux | [`FoxLair-0.3.0-linux-x86_64.rpm`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-x86_64.rpm) | Fedora, openSUSE |
+| 🐧 Linux | [`FoxLair-0.3.0-linux-x86_64.AppImage`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/FoxLair-0.3.0-linux-x86_64.AppImage) | Другие дистрибутивы, без установки |
+
+Суммы файлов — в [`SHA256SUMS`](https://github.com/DiFoxenGit/foxlair/releases/download/v0.3.0/SHA256SUMS):
+`sha256sum -c SHA256SUMS --ignore-missing`.
+
+### Установка
+
+1. Скачайте файл для своей системы из таблицы выше.
+2. Запустите и выберите язык, палитру и тему.
 3. Введите адрес сервера, логин и пароль, которые прислал хостинг.
-4. Подтвердите отпечаток сервера и дождитесь установки агента — дальше всё происходит на странице агента.
+4. Подтвердите отпечаток сервера и дождитесь установки агента — дальше всё происходит на странице сервера.
 
 **Что нужно от сервера:** Ubuntu 22.04 или 24.04 LTS, x86_64 или ARM64, от 512 МБ памяти и 2 ГБ свободного места.
 Интернет во время установки нужен вашему устройству, а не серверу: агента скачивает приложение и передаёт по SSH.
 Подойдёт любой VPS, домашний компьютер или Raspberry Pi (лучше не с SD-карты — приложение предупредит).
 
+**Обновления.** На Windows и Android приложение 0.2.25 и новее предлагает обновиться само. На Linux новую версию
+ставят пакетом. Агент на сервере обновляется сам — страница сервера предложит обновиться.
+
+<details>
+<summary><b>Linux: что нужно системе</b></summary>
+
+<br>
+
+- glibc 2.34 или новее и WebKitGTK 4.1.
+- `.deb` и `.rpm` ставьте через `apt` или `dnf` — зависимости подтянутся сами.
+- `.AppImage` достаточно сделать исполняемым: `chmod +x FoxLair-0.3.0-linux-x86_64.AppImage`.
+- Приложение на Linux не обновляется само: новую версию ставят пакетом поверх.
+- Трей — системное меню с теми же пунктами, что панель на Windows.
+
+</details>
+
 > [!NOTE]
 > Приложение пока не подписано сертификатом удостоверяющего центра, поэтому Windows покажет предупреждение SmartScreen:
-> «Подробнее» → «Выполнить в любом случае». Обновления агента подписаны ключом проекта и проверяются перед установкой.
+> «Подробнее» → «Выполнить в любом случае». APK подписаны ключом выпуска (схемы v2 и v3) и ставятся поверх прежних версий.
+> Обновления агента подписаны ключом проекта и проверяются перед установкой.
 
 ## 🛡 Безопасность
 
@@ -146,12 +261,26 @@ flowchart LR
 - [x] VPN на AmneziaWG: устройства с QR-кодом, маршруты и маскировка
 - [x] DNS с блокировкой рекламы
 - [x] Хранилище файлов и игровые серверы
+- [x] Умный дом
 - [x] Приложение для Android
 - [x] Консоль сервера и журналы служб на странице сервера
+- [x] Оформление Fox Brand: три палитры, светлая и тёмная темы, Тейл, трей
+- [x] Приложение для Linux
 - [ ] Фото и кино
-- [ ] macOS и Linux
+- [ ] macOS
 
 ## ❓ Частые вопросы
+
+<details>
+<summary><b>Куда делись стили «Графит», «Стекло» и «Терминал»?</b></summary>
+
+<br>
+
+В 0.3.0 их заменили палитры Fox Brand — общего оформления всех приложений DiFoxen. Прежний стиль переносится
+сам: он становится палитрой Toffee, а тема и язык остаются прежними. Другую палитру можно выбрать в настройках
+в любой момент.
+
+</details>
 
 <details>
 <summary><b>Что будет с тем, что уже стоит на сервере?</b></summary>
@@ -203,4 +332,4 @@ flowchart LR
 
 Проприетарное ПО, все права защищены — см. [LICENSE](LICENSE).
 
-<div align="center"><br><sub>© 2026 DiFoxen · FoxLair — твоё личное облако · <a href="README.en.md">English</a></sub></div>
+<div align="center"><br><sub>© 2026 DiFoxen · FoxLair — ваше личное облако · <a href="README.en.md">English</a></sub></div>
